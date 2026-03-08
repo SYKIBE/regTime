@@ -1,0 +1,8 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/94becc4b-dc48-40e7-9e06-cfd180225b43/resourceGroups/Sydschakt/providers/Microsoft.Web/sites/RegTime",
+  "appService.deploySubpath": "."
+}
