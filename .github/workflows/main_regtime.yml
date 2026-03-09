@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - RegTime
+name: Build and deploy Node.js app to Azure Web App - regtime
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_420609F0AA7B48D49E084B90B344729E }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_DB90B1B290434E44BE40B203945C8C37 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4F5F8F35BB0F45E08231BE19DF5ABA2B }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B6E01A55460A4DF3A3D573DF39277F7D }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A4046274F46D4EA298C11B6A3B49BD7A }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A6D0D29E5DE941CFAF11A146248B2C80 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'RegTime'
+          app-name: 'regtime'
           slot-name: 'Production'
           package: .
           
